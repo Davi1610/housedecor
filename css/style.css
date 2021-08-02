@@ -1,0 +1,115 @@
+/*  font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  flex: 1;
+  background-color: #00796b;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+header h1 {
+  padding-left: 200px;
+  padding-top: 40px;
+}
+header nav {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+header nav ul {
+  /* Pra tirar as bolinhas da barra de navegação */
+  list-style: none;
+}
+header nav ul li {
+  background-color: #eeee;
+  display: inline-block;
+  padding: 20px 50px;
+  /* Comando pra mudança de cor quando passa o mouse no a não ser tão veloz */
+  transition: ease 0.5s;
+}
+header nav ul li a {
+  color: rgb(38, 65, 65);
+  text-decoration: none;
+  font-size: 12pt;
+  text-transform: capitalize;
+}
+/* Este comando é pra formatar a caixinha do a sempre que passar o mouse em cima */
+header nav ul li:hover {
+  background-color: cornflowerblue;
+}
+header nav ul li:hover > a {
+  color: ghostwhite;
+}
+main {
+  flex: 1;
+}
+main #painel {
+  height: 400px;
+  background-image: url("../img/sala1.jpg");
+  /* comando pra fazer a imagem ocupar 100% do espaço */
+  background-size: 100%;
+  /* comando pra posicionar a imagem de background melhor */
+  background-position: 0px -300px;
+}
+footer {
+  flex: 1;
+  /* tornar os elementos flexiveis */
+  display: flex;
+  /* colocar os elementos um ao lado do outro */
+  flex-direction: row;
+  background-color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 10pt;
+  padding: 50px;
+  color: #fff;
+}
+footer #redes,
+footer #end {
+  flex: 1;
+  color: #fff;
+}
+footer #end {
+  text-align: right;
+  padding-right: 50px;
+}
+footer #redes ul {
+  list-style: none;
+}
+footer #redes ul li {
+  display: inline-block;
+}
+footer #redes ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer #redes ul li a i {
+  font-size: 30px;
+  color: #fff;
+  margin: 10px;
+}
+
+/* Breakpoints do projeto */
+/* telas de smartphone */
+@media (min-width: 0px) and (max-width: 575.98px) {
+}
+/* telas de tablets */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+/* telas de desktops */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header nav {
+    width: 100%;
+  }
+}
