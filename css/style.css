@@ -28,6 +28,10 @@ header nav {
   text-align: center;
   margin-top: 40px;
 }
+header #menu,
+header nav #fechar {
+  display: none;
+}
 header nav ul {
   /* Pra tirar as bolinhas da barra de navegação */
   list-style: none;
@@ -103,9 +107,98 @@ footer #redes ul li a i {
 /* Breakpoints do projeto */
 /* telas de smartphone */
 @media (min-width: 0px) and (max-width: 575.98px) {
+  header h1 {
+    padding: 0;
+    text-align: center;
+  }
+  main #painel {
+    height: 100px;
+    background-position: 0px -80px;
+  }
+
+  header nav {
+    background-color: #000;
+    height: 10vh; /*v(viewport) h (height); 100% da altura da tela do dispositivo que abre*/
+    position: fixed;
+    /* Fazer a barra iniciar no topo do navegador e do lado de fora
+    a esquerda do navegador */
+    top: 0;
+    left: -250px;
+    width: 200px;
+    padding-top: 100px;
+    transition: ease 0.5s;
+    z-index: 10000;
+  }
+  header nav ul li {
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #000;
+  }
+  header nav ul li a {
+    color: #fff;
+  }
+  header #menu,
+  header nav #fechar {
+    display: block;
+  }
+  header #menu {
+    position: fixed;
+    top: 10;
+    left: 10;
+  }
+  header nav #close {
+    position: relative;
+    top: 10px;
+    right: 10px;
+  }
 }
 /* telas de tablets */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  header h1 {
+    padding: 0;
+    text-align: center;
+  }
+  main #painel {
+    height: 250px;
+    background-position: 0px -80px;
+  }
+  header nav {
+    background-color: #000;
+    height: 10vh; /*v(viewport) h (height); 100% da altura da tela do dispositivo que abre*/
+    position: fixed;
+    /* Fazer a barra iniciar no topo do navegador e do lado de fora
+    a esquerda do navegador */
+    top: 0;
+    left: -250px;
+    width: 200px;
+    padding-top: 100px;
+    transition: ease 0.5s;
+    z-index: 10000;
+  }
+  header nav ul li {
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #000;
+  }
+  header nav ul li a {
+    color: #fff;
+  }
+  header #menu,
+  header nav #fechar {
+    display: block;
+  }
+  header #menu {
+    position: fixed;
+    top: 10;
+    left: 10;
+  }
+  header nav #close {
+    position: relative;
+    top: 10px;
+    right: 10px;
+  }
 }
 /* telas de desktops */
 @media (min-width: 768px) and (max-width: 991.98px) {
