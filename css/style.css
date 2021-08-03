@@ -152,6 +152,141 @@ main #faixahome3 div iframe {
   width: 100%;
   height: 500px;
 }
+main #sala h3,
+main #cozinha h3,
+main #quarto h3,
+main #banheiro h3,
+main #jantar h3 {
+  font-family: "Verdana";
+  font-size: 40pt;
+  font-weight: lighter;
+  text-align: center;
+  padding: 50px 0px;
+  color: rgba(0, 0, 0, 0.4);
+}
+main #sala h2,
+main #cozinha h2,
+main #quarto h2,
+main #banheiro h2,
+main #jantar h2 {
+  font-family: "Verdana";
+  font-size: 40pt;
+  font-weight: lighter;
+  text-align: center;
+  padding: 60px;
+  color: rgba(0, 0, 0, 0.4);
+}
+main #sala div {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
+main #sala div img {
+  flex: 1;
+  width: 32%;
+  height: auto;
+  opacity: 0.8;
+  cursor: pointer; /*mouse no formato de hand(mão)*/
+  transition: ease 0.5s;
+}
+main #sala div img:hover {
+  opacity: 1;
+}
+main #cozinha #conteudo {
+  display: flex;
+  flex-direction: row;
+}
+main #cozinha #destaque {
+  width: 40%;
+}
+main #cozinha #destaque img {
+  width: 100%;
+  height: auto;
+}
+main #cozinha #miniatura {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main #cozinha #miniatura img {
+  flex: 1;
+  width: 32%;
+  height: auto;
+  margin: 5px;
+}
+main #quarto div {
+  display: flex;
+  background-color: #263238;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main #quarto div img {
+  flex: 1;
+  width: 40%;
+  height: auto;
+  /* Realizar o efeito de inclinação nas imagens */
+  transform: skewX(15deg);
+  margin: 5px;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+main #quarto div img:hover {
+  transform: scale(1.2);
+  transform: skewX(0deg);
+  /* fazer a imagem sobre as outras */
+  z-index: 1000;
+}
+main #banheiro #area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: 1px dotted silver;
+}
+main #bainheiro #area #div {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px #666;
+  text-align: center;
+  padding: 40px 0px 100px 0px;
+  margin: 5px;
+}
+main #banheiro #area div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+main #jantar div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main #jantar div img {
+  flex: 1;
+  width: 15%;
+}
+main form {
+  width: 40%;
+  padding: 20px;
+  margin: 30px auto;
+}
+main form input,
+main form textarea {
+  width: 90%;
+  padding: 10px;
+  display: block;
+  margin: 5px;
+}
+main form textarea {
+  height: 200px;
+}
+main form input[type="submit"] {
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Breakpoints do projeto */
 /* telas de smartphone */
 @media (min-width: 0px) and (max-width: 575.98px) {
